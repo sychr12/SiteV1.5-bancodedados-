@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/main1.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button onclick="login()">Entrar</button>
+        <div id="errorMessage" class="error-message"></div>
+        
+        <div class="registre-link">
+            <p>Não é registrado? <a href="#">Registre aqui</a></p>
+        </div>
+    </div>
+
+<style>
+</style>
+
+<script>
+    function login() {
+    let user = document.getElementById("username").value.trim();
+    let pass = document.getElementById("password").value.trim();
+    let errorMessage = document.getElementById("errorMessage");
+
+    if (user === "" || pass === "") {
+        errorMessage.textContent = "Por favor, preencha todos os campos.";
+        return;
+    }
+
+    if (user === "admin" && pass === "@Wtc1902crc") {
+        sessionStorage.setItem("authUser", "TI"); // Armazena o usuário autenticado
+        window.location.href = "/popup/edit.html"; // Redireciona para a página de edição
+    } else {
+        errorMessage.textContent = "Usuário ou senha incorretos!";
+    }
+}
+</script>
+
+</body>
+</html>

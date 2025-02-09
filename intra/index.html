@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Cabeçalho do documento -->
+    <title>INTRANET</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <!-- Link para os arquivos CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="style.css?v=4.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.6/dist/sweetalert2.min.css">
+
+    
+    <!-- Se o JavaScript estiver desabilitado -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+
+</head>
+
+<body class="is-preload">
+    <!-- Início da estrutura principal da página -->
+
+    <div id="wrapper">
+
+        <!-- Cabeçalho da página -->
+        <header id="header">
+            <div class="inner">
+                <!-- Logo do IDAM -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/logo-idam.png" alt="Logo IDAM" /></span><span>INTRANET IDAM</span>
+                </a>
+                
+                <!-- Navegação de menu -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<!-- Menu lateral -->
+<nav id="menu">
+    <ul>
+        <!-- Categoria principal com seta -->
+        <li>
+            <span class="dropdown">PJ<i class="fas fa-chevron-down"></i></span>
+            <ul class="submenu">
+                <!-- Subcategorias dentro de PJ -->
+                <li>
+                    <span class="dropdown">DIÁRIOS OFICIAIS<i class="fas fa-chevron-down"></i></span>
+                    <ul class="submenu">
+                        <li><a href="https://diario.imprensaoficial.am.gov.br/" target="_blank" rel="noopener noreferrer">Diário Imprensa Oficial</a></li>
+                        <li><a href="https://diario.mpam.mp.br/pages/home.jsf" target="_blank" rel="noopener noreferrer">Diário MP AM</a></li>
+                        <li><a href="https://doe.tce.am.gov.br/" target="_blank" rel="noopener noreferrer">Doe TCE</a></li>
+                        <li><a href="https://comunica.pje.jus.br/" target="_blank" rel="noopener noreferrer">Comunica PJE</a></li>
+                        <li><a href="https://dejt.jt.jus.br/dejt/" target="_blank" rel="noopener noreferrer">DEJT</a></li>
+                        <li><a href="https://www.gov.br/imprensanacional/pt-br" target="_blank" rel="noopener noreferrer">Imprensa Nacional</a></li>
+                        <li><a href="https://consultasaj.tjam.jus.br/cdje/index.do" target="_blank" rel="noopener noreferrer">Diário da Justiça Eletrônico (SAJ)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="dropdown">DOMICÍLIOS ELETRÔNICOS<i class="fas fa-chevron-down"></i></span>
+                    <ul class="submenu">
+                        <li><a href="https://dec.tce.am.gov.br/dec/login.jsf" target="_blank" rel="noopener noreferrer">DEC TCE</a></li>
+                        <li><a href="https://consultasaj.tjam.jus.br/esaj/portal.do?servico=740000" target="_blank" rel="noopener noreferrer">Consulta e-SAJ</a></li>
+                        <li><a href="https://projudi.tjam.jus.br/projudi/" target="_blank" rel="noopener noreferrer">PROJUDI</a></li>
+                        <li><a href="https://pje.trt11.jus.br/primeirograu/login.seam" target="_blank" rel="noopener noreferrer">PJE TRT11</a></li>
+                    </ul>
+                </li>
+                <li>
+                        <li><a href="/popup/login.html" target="_blank" rel="noopener noreferrer">LOGIN</a></li>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span class="dropdown">RH<i class="fas fa-chevron-down"></i></span>
+            <ul class="submenu">
+                <li><a href="https://prodamrh.prodam.am.gov.br/" target="_blank" rel="noopener noreferrer">Prodam RH</a></li>
+                <li><a href="http://servicos.sead.am.gov.br/passivosam/auth/login" target="_blank" rel="noopener noreferrer">SEAD</a></li>
+                <li><a href="https://www.portaldosegurado.am.gov.br/conectado.php" target="_blank" rel="noopener noreferrer">SISPREV</a></li>
+                <li><a href="https://web.ciee.org.br/empresa/relatorios/estudantes-contratados" target="_blank" rel="noopener noreferrer">CIEE</a></li>
+                <li><a href="https://fap.dataprev.gov.br/consultar-fap" target="_blank" rel="noopener noreferrer">FAP</a></li>
+                <li><a href="https://www.esocial.gov.br/portal/Assinadoc" target="_blank" rel="noopener noreferrer">E-SOCIAL</a></li>
+                <li><a href="https://ioanews.imprensaoficial.am.gov.br/" target="_blank" rel="noopener noreferrer">IOA NEWS</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="dropdown">NTI<i class="fas fa-chevron-down"></i></span>
+            <ul class="submenu">
+                <!-- Subcategorias dentro de PJ -->
+                <li>
+                    <span class="dropdown">POPUP<i class="fas fa-chevron-down"></i></span>
+                    <ul class="submenu">
+                        <li><a href="/popup/login.html" target="_blank" rel="noopener noreferrer">LOGIN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+
+        <!-- Corpo principal da página -->
+        <div id="main">
+            <div class="inner">
+                <!-- Seção de blocos de atalhos -->
+                <section class="tiles">
+                    <!-- Cada artigo representa um atalho para outro sistema ou serviço -->
+                    <article class="style4">
+                        <span class="image">
+                            <img src="images/fundoAjuri.png" alt="Ajuri" />
+                        </span>
+                        <a href="http://www.ajuri.am.gov.br/" target="_blank">
+                            <div class="icon"><i class="fas fa-cubes"></i></div>
+                            <h2>Ajuri</h2>
+                            <div class="content">
+                                <p>Sistema para gestão eficiente de material e patrimônio, centralizando o controle de bens e recursos do IDAM.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style1">
+                        <span class="image">
+                            <img src="images/fundoEcompras.png" alt="E-Compras" />
+                        </span>
+                        <a href="https://www.e-compras.am.gov.br/publico/" target="_blank">
+                            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+                            <h2>E-COMPRAS</h2>
+                            <div class="content">
+                                <p>Plataforma de gestão eletrônica para compras e contratações públicas no Amazonas.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style2">
+                        <span class="image">
+                            <img src="images/fundoEmailCorp.png" alt="Email Corporativo" />
+                        </span>
+                        <a href="https://portal.office.com" target="_blank">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <h2>EMAIL CORPORATIVO</h2>
+                            <div class="content">
+                                <p>Solução moderna de comunicação, colaboração, integração, economia e eficiência para os órgãos do Governo do Amazonas.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style5">
+                        <span class="image">
+                            <img src="images/fundoSefaz.png" alt="Sefaz" />
+                        </span>
+                        <a href="https://www.sefaz.am.gov.br/" target="_blank">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                            <h2>Sefaz</h2>
+                            <div class="content">
+                                <p>Sistema da Secretaria da Fazenda do Amazonas, responsável pela gestão tributária, financeira e fiscal do Estado, promovendo eficiência e transparência.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style3">
+                        <span class="image">
+                            <img src="images/fundoSiged.png" alt="Siged" />
+                        </span>
+                        <a href="https://sistemas.sefaz.am.gov.br/siged/login" target="_blank">
+                            <div class="icon"><i class="fas fa-folder-open"></i></div>
+                            <h2>SIGED</h2>
+                            <div class="content">
+                                <p>Sistema de Gestão Eletrônica de Documentos do Amazonas, que centraliza e moderniza o controle de processos e documentos administrativos no Estado.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style2">
+                        <span class="image">
+                            <img src="images/fundoSigater.png" alt="Sigater" />
+                        </span>
+                        <a href="https://sigater.idam.am.gov.br/" target="_blank">
+                            <div class="icon"><i class="fas fa-seedling"></i></div>
+                            <h2>SIGATER</h2>
+                            <div class="content">
+                                <p>Sistema de Gestão da Assistência Técnica e Extensão Rural do Amazonas, que organiza e monitora as ações voltadas ao desenvolvimento rural no Estado.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style6">
+                        <span class="image">
+                            <img src="images/fundoIdam.png" alt="Site IDAM" />
+                        </span>
+                        <a href="https://www.idam.am.gov.br/" target="_blank">
+                            <div class="icon"><i class="fas fa-globe"></i></div>
+                            <h2>Site Idam</h2>
+                            <div class="content">
+                                <p>Plataforma digital que oferece acesso a serviços e informações relacionados à instituição.</p>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="style3">
+                        <span class="image">
+                            <img src="images/fundoNTI.png" alt="Suporte TI" />
+                        </span>
+                        <a href="http://nti.idam.am.gov.br/front/helpdesk.public.php" target="_blank">
+                            <div class="icon"><i class="fas fa-tools"></i></div>
+                            <h2>SUPORTE TI</h2>
+                            <div class="content">
+                                <p>Serviço de suporte técnico especializado para resolver problemas e atender às demandas de tecnologia da informação no IDAM.</p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.6/dist/sweetalert2.all.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/popup.js"></script>
+
+    <!-- Pop-up Modal -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bem-vindo à Intranet</h2>
+            <p id="popupMessage">Acess as opções disponíveis e tenha um ótimo dia!</p>
+            <label>
+                <input type="checkbox" id="dontShowAgain"> Não mostrar novamente
+            </label>
+            <button id="closePopup">Fechar</button>
+        </div>
+    </div>
+       
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Conteúdo</title>
+    <script>
+        // Verifica se o usuário está autenticado
+        if (sessionStorage.getItem("authUser") !== "TI") {
+            alert("Acesso negado! Você será redirecionado.");
+            window.location.href = "/"; // Redireciona para a página inicial
+        }
+    </script>
+</head>
+<body>
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <div class="container">
+        <h1>Editar Conteúdo</h1>
+        <textarea id="editField" rows="10" cols="50">Texto inicial...</textarea>
+        <div class="button-container">
+            <button onclick="saveEdit()">Salvar</button>
+            <button onclick="window.close()">Cancelar</button>
+        </div>
+    </div>
+
+    <script>
+        function saveEdit() {
+            let newText = document.getElementById("editField").value.trim();
+            if (newText === "") {
+                alert("O campo de texto não pode estar vazio!");
+                return;
+            }
+            localStorage.setItem("editedText", newText); // Salva o texto no localStorage
+            alert("Texto salvo com sucesso!");
+            window.close();
+        }
+    </script>
+
+
+<style>
+
+
+
+</style>
+</body>
+</html>
